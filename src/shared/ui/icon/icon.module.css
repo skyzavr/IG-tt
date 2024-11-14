@@ -1,0 +1,15 @@
+.icon {
+  background-color: var(--background-button-default);
+  border: 1px solid var(--border-neutral-default);
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  border-color: var(--background-button-primary);
+  transition: all 0.3s ease-in-out;
+}
