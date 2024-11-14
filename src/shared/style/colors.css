@@ -1,0 +1,14 @@
+:root {
+  --text-neutral-main: #2e3238;
+  --border-neutral-default: #d5d8dd;
+  --border-badge-default: #99d5ff;
+  --background-badge-default: #e5f4ff;
+  --background-button-default: #fff;
+  --background-button-input: #fcfcfd;
+  --icon-neutral-default: #2e3238;
+  --icon-neutral-disable: #abb1ba;
+  --text-neutral-mask: #abb1ba;
+  --text-accent-red: #b21f00;
+  --background-button-primary: #0078cf;
+  --text-neutral-inverse: #fff;
+}
