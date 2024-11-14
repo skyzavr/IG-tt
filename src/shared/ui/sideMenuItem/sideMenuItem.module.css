@@ -1,0 +1,30 @@
+.listItem {
+  margin-bottom: 10px;
+  color: var(--text-neutral-main);
+  font: var(--main-regular);
+  transition: 0.3s color ease-in-out;
+}
+
+.listItem:hover {
+  cursor: pointer;
+  color: var(--background-button-primary);
+  transition: 0.3s color ease-in-out;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.active svg {
+  transform: rotateZ(90deg);
+}
+
+.content {
+  color: var(--text-neutral-main);
+  font: var(--main-regular);
+  padding: 0 10px 20px 20px;
+}
