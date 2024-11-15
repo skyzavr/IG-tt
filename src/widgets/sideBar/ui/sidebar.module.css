@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navElement {
+  margin-bottom: 16px;
+}
+
+.navLink {
+  display: block;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+.active path {
+  fill: var(--background-button-primary);
+}
+
+.nav,
+.contentWrapper {
+  padding: 16px;
+  border-right: 1px solid var(--border-neutral-default);
+  height: calc(100vh - 54px);
+}
