@@ -1,0 +1,12 @@
+.searchWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchWrapper > input[type='search'] {
+  margin-right: 10px;
+}
+
+.list {
+  margin: 10px 0;
+}
