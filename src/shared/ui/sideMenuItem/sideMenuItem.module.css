@@ -28,3 +28,7 @@
   font: var(--main-regular);
   padding: 0 10px 20px 20px;
 }
+
+.marked {
+  background-color: rgb(226 238 171);
+}
