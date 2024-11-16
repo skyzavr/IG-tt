@@ -1,20 +1,22 @@
 import { UserProfile } from '@features/userProfile';
 
 import { Settings } from '@features/settings';
-import { Icon, IconImg, Search } from '@shared/ui';
+import { Search } from '@shared/ui';
+import { isMobileScreen } from '@shared/lib/screenWidth';
 import logo from '/assets/Logo.svg';
 import userImg from '/assets/persona.png';
 
 import css from './header.module.css';
 
 export const Header = () => {
-  const isMobile = window.innerWidth <= 768;
+  const isMobile = isMobileScreen();
 
   const currentUser = {
     title: 'Максим Галактионов',
     imgPath: userImg,
-    onClickHandler: () =>
-      console.log('I assume there should be a drop-down list here'),
+    onClickHandler: () => {
+      console.log(`user name is ${currentUser.title}}`);
+    },
   };
 
   const onHeaderSearch = (value: string) =>
@@ -22,13 +24,7 @@ export const Header = () => {
 
   return (
     <header className={css.wrapper}>
-      {isMobile ? (
-        <Icon onClickHandler={() => console.log('menu')}>
-          <IconImg type="menu" />
-        </Icon>
-      ) : (
-        <img src={logo} alt="simple one" />
-      )}
+      {!isMobile && <img src={logo} alt="simple one" />}
       <div className={css.handleWrapper}>
         <Search title="Поиск" icon="search" onUpdateData={onHeaderSearch} />
         <UserProfile {...currentUser} />

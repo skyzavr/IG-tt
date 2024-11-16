@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--background-button-default);
 }
 
@@ -27,12 +27,20 @@
 }
 
 @media (min-width: 320px) {
+  .wrapper {
+    justify-content: flex-end;
+  }
+
   .handleWrapper > input[type='search'] {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
+  .wrapper {
+    justify-content: space-between;
+  }
+
   .handleWrapper > input[type='search'] {
     display: block;
   }
