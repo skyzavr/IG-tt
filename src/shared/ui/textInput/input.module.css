@@ -1,0 +1,42 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  color: var(--text-neutral-main);
+  font: var(--main-semibold);
+  margin-bottom: 10px;
+}
+
+.required {
+  color: var(--text-accent-red);
+  padding-right: 5px;
+}
+
+.textField {
+  background-color: var(--background-button-input);
+  color: var(--text-neutral-main);
+  font: var(--main-regular);
+  border: 1px solid var(--border-neutral-default);
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.error {
+  border: 1px solid var(--text-accent-red);
+}
+
+.combineBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.combineBtn > div {
+  width: 100%;
+  margin-right: 5px;
+}
