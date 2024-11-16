@@ -1,6 +1,9 @@
 .wrapper {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
 }
 
 .nav {
@@ -28,5 +31,10 @@
 .contentWrapper {
   padding: 16px;
   border-right: 1px solid var(--border-neutral-default);
-  height: calc(100vh - 54px);
+  height: calc(100vh - 50px);
+}
+
+.contentWrapper {
+  position: sticky;
+  overflow: auto;
 }
