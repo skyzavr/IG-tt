@@ -1,0 +1,32 @@
+.wrapper {
+  position: absolute;
+  right: 0;
+}
+
+.content {
+  padding: 0 16px 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title {
+  color: var(--text-neutral-main);
+}
+
+@media (min-width: 320px) {
+  .title {
+    font: var(--title-small-semibold);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font: var(--title-semibold);
+  }
+}
