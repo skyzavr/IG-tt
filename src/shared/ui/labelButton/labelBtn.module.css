@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 2px 8px;
+  background-color: var(--background-badge-default);
+  border: 1px solid var(--border-badge-default);
+  border-radius: 4px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.wrapper > span {
+  margin-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
