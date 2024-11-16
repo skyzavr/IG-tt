@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { Icon, IconImg, Search, SideMenuItem } from '@shared/ui';
 import { menuList } from '../lib/menuDummy';
+
 import css from './menu.module.css';
 
 export const Menu = () => {
@@ -32,7 +33,7 @@ export const Menu = () => {
       </div>
       <div>
         <ul className={css.list}>
-          {menuList.map(({ title, content }) => (
+          {menuList.map(({ title, content }, i) => (
             <SideMenuItem
               {...{
                 title,
@@ -41,7 +42,7 @@ export const Menu = () => {
                 currentMenuItem,
                 menuQuery,
               }}
-              key={title}
+              key={title + i.toString()}
             />
           ))}
         </ul>

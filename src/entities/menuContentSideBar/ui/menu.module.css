@@ -1,6 +1,9 @@
 .searchWrapper {
   display: flex;
   flex-direction: row;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 .searchWrapper > input[type='search'] {

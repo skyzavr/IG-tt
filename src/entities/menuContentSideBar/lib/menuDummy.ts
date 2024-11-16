@@ -28,4 +28,18 @@ export const menuList: menuListParams[] = [
     title: 'Отсутствие на рабочем месте - 1',
     content: 'some content in this section',
   },
+  { title: 'Настройка каталогов', content: 'some content in this section' },
+  { title: 'Запросы на обслуживание', content: 'some content in this section' },
+  { title: 'Запросы на изменение', content: 'some content in this section' },
+  {
+    title: 'Управление конфигурациями',
+    content: 'some content in this section',
+  },
+  { title: 'Моя работа - 1', content: 'some content in this section' },
+  { title: 'Структура портала - 1', content: 'some content in this section' },
+  { title: 'Личное расписание - 1', content: 'some content in this section' },
+  {
+    title: 'Отсутствие на рабочем месте - 1',
+    content: 'some content in this section',
+  },
 ];
