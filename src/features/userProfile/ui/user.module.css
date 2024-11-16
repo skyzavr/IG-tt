@@ -1,0 +1,44 @@
+.userProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userName {
+  margin-left: 10px;
+  font: var(--main-regular);
+  color: var(--text-neutral-main);
+  transition: color 0.3s ease-in-out;
+}
+
+.userProfile:hover .userName {
+  color: var(--background-button-primary);
+  transition: color 0.3s ease-in-out;
+}
+
+.userImg {
+  border-radius: 50%;
+}
+
+@media (min-width: 320px) {
+  .userImg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .userName {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .userImg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .userName {
+    display: block;
+  }
+}
