@@ -1,0 +1,15 @@
+.contentWrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 16px 20px;
+}
+
+@media (min-width: 992px) {
+  .contentWrapper,
+  .contentWrapperLabel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    grid-gap: 16px 20px;
+  }
+}
