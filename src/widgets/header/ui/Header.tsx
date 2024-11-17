@@ -2,15 +2,12 @@ import { UserProfile } from '@features/userProfile';
 
 import { Settings } from '@features/settings';
 import { Search } from '@shared/ui';
-import { isMobileScreen } from '@shared/lib/screenWidth';
 import logo from '/assets/Logo.svg';
 import userImg from '/assets/persona.png';
 
 import css from './header.module.css';
 
 export const Header = () => {
-  const isMobile = isMobileScreen();
-
   const currentUser = {
     title: 'Максим Галактионов',
     imgPath: userImg,
@@ -24,7 +21,7 @@ export const Header = () => {
 
   return (
     <header className={css.wrapper}>
-      {!isMobile && <img src={logo} alt="simple one" />}
+      <img src={logo} alt="simple one" className={css.logo} />
       <div className={css.handleWrapper}>
         <Search title="Поиск" icon="search" onUpdateData={onHeaderSearch} />
         <UserProfile {...currentUser} />

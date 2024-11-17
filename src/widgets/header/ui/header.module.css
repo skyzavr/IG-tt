@@ -31,6 +31,10 @@
     justify-content: flex-end;
   }
 
+  .logo {
+    display: none;
+  }
+
   .handleWrapper > input[type='search'] {
     display: none;
   }
@@ -39,6 +43,10 @@
 @media (min-width: 768px) {
   .wrapper {
     justify-content: space-between;
+  }
+
+  .logo {
+    display: block;
   }
 
   .handleWrapper > input[type='search'] {
