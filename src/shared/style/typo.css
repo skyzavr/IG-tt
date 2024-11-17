@@ -1,6 +1,7 @@
 :root {
   --title-semibold: 600 24px/32px 'Montserrat', sans-serif;
   --title-small-semibold: 600 20px/24px 'Montserrat', sans-serif;
+  --title-small-regular: 20px 'Montserrat', sans-serif;
   --main-regular: 14px/20px 'Open Sans', sans-serif;
   --main-semibold: 600 14px/20px 'Open Sans', sans-serif;
 }
