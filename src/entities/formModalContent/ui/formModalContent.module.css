@@ -1,0 +1,35 @@
+.btnHandler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.title {
+  color: var(--text-neutral-main);
+}
+
+.btnHandler > p {
+  color: var(--text-neutral-secondary);
+  text-transform: uppercase;
+}
+
+@media (min-width: 320px) {
+  .title {
+    font: var(--title-small-semibold);
+  }
+
+  .btnHandler > p {
+    font: var(--main-semibold);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font: var(--title-semibold);
+  }
+
+  .btnHandler > p {
+    font: var(--title-small-regular);
+  }
+}
