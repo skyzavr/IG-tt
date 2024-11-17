@@ -4,15 +4,16 @@ import classNames from 'classnames';
 import { BookmarksSideBar } from '@entities/bookmarksContentSideBar';
 import { MenuSideBar } from '@entities/menuContentSideBar';
 import { IconImg } from '@shared/ui';
-import { isMobileScreen } from '@shared/lib/screenWidth';
 import { sideBarMenuList, menuType } from '../lib/menu';
 
 import css from './sidebar.module.css';
+import { useWidth } from '@shared/lib/useWidth';
 
 type sideBarProps = { onGetWidth: (value: number) => void };
 
 export const SideBar = ({ onGetWidth }: sideBarProps) => {
-  const isMobile = isMobileScreen();
+  const width = useWidth();
+  const isMobile = width < 768;
   const sideBarRef = useRef<HTMLElement>(null);
   const [menuItem, setMenuItem] = useState<string | null>('menu');
 
