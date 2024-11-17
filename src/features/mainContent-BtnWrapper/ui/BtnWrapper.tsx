@@ -20,7 +20,6 @@ export const BtnWrapper = ({ isCreate = false }: btnWrapperProps) => {
   const [menuClass, setMenuClass] = useState<string>(css.none);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [isShowModal, setIsShowModal] = useState(false);
-  const [taskList, setTaskList] = useState({ ...dataInit });
 
   const onSetMenu = () => setIsMenuOpen((prev) => !prev);
 
@@ -64,7 +63,7 @@ export const BtnWrapper = ({ isCreate = false }: btnWrapperProps) => {
           <Modal onCloseModal={handleModal}>
             <FormModalContent onCloseHandler={handleModal}>
               <FormContent
-                taskList={taskList}
+                taskList={dataInit}
                 onUpdateData={() => console.log('d')}
               />
             </FormModalContent>

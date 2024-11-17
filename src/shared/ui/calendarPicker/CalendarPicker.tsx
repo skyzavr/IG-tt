@@ -14,7 +14,7 @@ type calendarProps = {
 export const CalendarPicker = ({ init, title, type }: calendarProps) => {
   const [data, setData] = useState(getDataFormat(init));
   const [defaultFormat, setDefaultFormat] = useState(init);
-  const onHandler: onUpdateData = ({ type, value }) => {
+  const onHandler: onUpdateData = ({ value }) => {
     console.log({ type, value });
   };
 
