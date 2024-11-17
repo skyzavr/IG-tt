@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 
 import css from './icon.module.css';
 
-type iconProps = { children: ReactElement; onClickHandler: () => void };
+type iconProps = { children: ReactElement; onClickHandler?: () => void };
 
 export const Icon = ({ children, onClickHandler }: iconProps) => {
   return (

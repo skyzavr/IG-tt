@@ -15,6 +15,7 @@ export const Input = (props: descriptionFields) => {
     init = '',
     isRequired = false,
     button,
+    isDisabled = false,
   } = props;
 
   const [value, setValue] = useState(init);
@@ -50,6 +51,7 @@ export const Input = (props: descriptionFields) => {
           {title}
         </label>
         <input
+          disabled={isDisabled}
           type="text"
           value={value}
           onChange={onTextHandler}
