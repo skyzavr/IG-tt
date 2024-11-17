@@ -10,8 +10,8 @@
 }
 
 .mobileMenu {
-  position: absolute;
-  top: -44px;
+  position: fixed;
+  top: 6px;
   left: 10px;
   z-index: 10;
 }
@@ -47,29 +47,24 @@
     width: 100%;
   }
 
-  .btns {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: var(--background-badge-default);
-    padding: 20px;
-    border-radius: 4px;
-  }
-
-  .btns > :first-child {
-    margin-bottom: 10px;
-  }
-
   .btnShow {
+    width: 100%;
+    position: absolute;
     display: flex;
     left: 0;
     transition: 0.4s;
   }
 
+  .btnShow > div,
+  .btnHide > div {
+    width: 100%;
+  }
+
   .btnHide {
+    width: 100%;
+    position: absolute;
     display: flex;
-    left: -300px;
+    left: -100%;
     transition: 0.4s;
   }
 }
@@ -77,20 +72,5 @@
 @media (min-width: 768px) {
   .subBtns {
     width: auto;
-  }
-
-  .btns {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background: none;
-    margin-bottom: 0;
-    padding: 0;
-    left: auto;
-  }
-
-  .btns > :first-child {
-    margin-bottom: 0;
   }
 }
