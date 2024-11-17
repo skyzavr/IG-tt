@@ -21,13 +21,13 @@
 }
 
 .search {
-  background: url('/public/assets/icons/search.svg') no-repeat right;
+  background: url('/assets/icons/search.svg') no-repeat right;
   background-origin: content-box;
   background-size: 16px;
 }
 
 .filter {
-  background: url('/public/assets/icons/filter.svg') no-repeat right;
+  background: url('/assets/icons/filter.svg') no-repeat right;
   background-origin: content-box;
   background-size: 16px;
 }
