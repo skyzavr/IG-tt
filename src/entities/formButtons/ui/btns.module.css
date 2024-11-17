@@ -1,0 +1,42 @@
+.mobileBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileBtns > :first-child {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 320px) {
+  .btns {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: var(--background-badge-default);
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .btns > :first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btns {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: none;
+    margin-bottom: 0;
+    padding: 0;
+    left: auto;
+  }
+
+  .btns > :first-child {
+    margin-right: 5px;
+  }
+}
